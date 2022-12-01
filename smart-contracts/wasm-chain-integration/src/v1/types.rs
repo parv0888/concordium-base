@@ -454,7 +454,7 @@ impl Output for ImportFunc {
     }
 }
 
-#[derive(Debug)]
+#[derive(Debug, Clone)] // TODO: Can this be Clone?
 pub struct ProcessedImports {
     pub(crate) tag: ImportFunc,
     ty:             FunctionType,
