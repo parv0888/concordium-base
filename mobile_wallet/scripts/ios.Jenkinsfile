@@ -17,6 +17,8 @@ pipeline {
             agent { label 'mac' }
             steps {
                 sh '''\
+                    git submodule update --init
+
                     # Move into folder
                     cd mobile_wallet
 
