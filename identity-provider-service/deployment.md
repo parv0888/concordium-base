@@ -33,13 +33,13 @@ This has the following parameters
   revokers. The parameter can also be passed via the environment variable
   `ANONYMITY_REVOKERS`.
 
-  Concretely this should be the anonymity_revokers.json from genesis-data.
+  Concretely this should be the anonymity-revokers.json from genesis-data.
 
 - `--identity-provider` which should be a filename of the file with the identity
   provider data. The parameter can also be passed via the environment variable
   `IDENTITY_PROVIDER`.
 
-  This should point to `ip_private_keys/identity_provider-1.json` in genesis-data.
+  This should point to `ip_private_keys/ip-data-0.json` in genesis-data.
 
 - `--global` points to a file with cryptographic parameters, should point to
   global.json in genesis_data. Can also be supplied by `GLOBAL_CONTEXT` environment variable.

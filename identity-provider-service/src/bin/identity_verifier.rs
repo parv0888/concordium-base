@@ -147,8 +147,8 @@ async fn main() {
                             }
                         };
                         let location = format!(
-                            "{}api/{}/identity/fail/{}?delay={}",
-                            id_provider_url, endpoint_version, id_cred_pub_hash, delay
+                            "{id_provider_url}api/{endpoint_version}/identity/fail/\
+                             {id_cred_pub_hash}?delay={delay}"
                         );
                         return Response::builder()
                             .header(LOCATION, location)
@@ -249,8 +249,8 @@ async fn main() {
                     };
 
                     let location = format!(
-                        "{}api/{}/create/{}?expiry={}",
-                        id_provider_url, identity_endpoint, id_cred_pub_hash, expiry
+                        "{id_provider_url}api/{identity_endpoint}/create/{id_cred_pub_hash}?\
+                         expiry={expiry}"
                     );
                     Response::builder()
                         .header(LOCATION, location)
